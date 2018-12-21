@@ -15,7 +15,7 @@ To access on this project, you have to use google chrome and text-editor.
 |
 ## USER STORY
 
-This quiz provides Multiple Choice Questions (MCQs) related to Javascript Framework. when user submit   you can get you score.You will have to read all the given answers and click over the correct answer.     If you are not sure about the answer then you can check the answer using Show Answer button.
+As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
 ## Link to live site on GitHub Pages
      https://github.com/Perpetue/Project-QuizBoad
 ## Technologies Used
