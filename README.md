@@ -22,4 +22,5 @@ This quiz provides Multiple Choice Questions (MCQs) related to Javascript Framew
    About the languages and tools I used to create this project. Assume that I know you probably used  languages HTML ,CSS, Javascripts and Markdown i used the bootstrap ,jquery, visual studio code and  linux or Ubuntu for terminal.
    ## Contact information.
    I'm Perpetue Muhawenimana, a full time student in Moringa school (WeCode) where I'm learning different languages to make projects.Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact me at E-mail:muperpety@gmail.com and Tel.Number:0786309745
-   
+   ## copyright and License information
+  * Copyright (c) 2018 PERPETUE MUHAWENIMANA 
