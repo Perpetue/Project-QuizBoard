@@ -18,3 +18,6 @@ To access on this project, you have to use google chrome and text-editor.
 This quiz provides Multiple Choice Questions (MCQs) related to Javascript Framework. when user submit   you can get you score.You will have to read all the given answers and click over the correct answer.     If you are not sure about the answer then you can check the answer using Show Answer button.
 ## Link to live site on GitHub Pages
      https://github.com/Perpetue/Project-QuizBoad
+## Technologies Used
+   About the languages and tools I used to create this project. Assume that I know you probably used  languages HTML ,CSS, Javascripts and Markdown i used the bootstrap ,jquery, visual studio code and  linux or Ubuntu for terminal.
+  
