@@ -7,7 +7,7 @@
     <title>Project Quiz Board</title>
     <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
      <link href="css/styles.css" rel="stylesheet" type="text/css">
-     <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script   src="./js/jquery-3.3.1.min.js" ></script>
      <script src="js/scripts.js"></script>
     </head>
     <body>
@@ -21,30 +21,41 @@
               </ul>
             </nav> 
         </div>
-       <div class="container">
-          <h1>Javascript Quiz</h1>
+        <div id="model">
+       <div class="container" >
+            <div class="jumbotron">
+                <h1> JavaScript QUIZ FOARM</h1>
+                <p>There are some instructions of doing this Quiz:</p>
+                    <ul>
+                      <li>Each question has 1 point and the quiz will be worked on 10 points</li>
+                      <li>Select one answer for each question.</li>
+                      <li>Answer all questions.</li>
+                      <li>After answering all qustions click on submit button.</li>
+                      <li>To see your score click on the paragraph below</li>
+                      <li>To hide also your score click also on that paragraph below</li>
+                    </ul>
+            </div>
             <div id="blanks">
                 <div>
-                  <p>Following quiz provides Multiple Choice Questions (MCQs) related to Javascript Framework. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. </p>
                 </div>
-                <form name="myform" method="post" onsubmit="return mytest()">
+                <form >
                    <div class="form-group">
                       <label for="question1">1. Which of the following is correct about features of JavaScript?</label>
                         <div class="radio">
                             <label>
-                              <input type="radio" name="answer1" value="A - JavaScript is a lightweight, interpreted programming language.">
+                              <input type="radio" name="answer1" value="A">
                            A - JavaScript is a lightweight, interpreted programming language.
                            </label>
                         </div>
                         <div class="radio">
                            <label>
-                              <input type="radio" name="answer1" value="B - JavaScript is designed for creating network-centric applications.">
+                              <input type="radio" name="answer1" value="B">
                              B - JavaScript is designed for creating network-centric applications.
                             </label>
                         </div>
                         <div class="radio">
                            <label>
-                              <input type="radio" name="answer1" value="C - All of the above">
+                              <input type="radio" name="answer1" value="C">
                              C - All of the above
                            </label>
                         </div>
@@ -52,19 +63,19 @@
                             <label for="answer2">2. Which of the following is the correct syntax to print a page using JavaScript?</label>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer2" value=" A - window.print();">
+                                  <input type="radio" name="answer2" value="A">
                                     A - window.print();
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer2" value=" B - browser.print();">
+                                  <input type="radio" name="answer2" value="B">
                                    B - browser.print();
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer2" value="C - navigator.print();">
+                                  <input type="radio" name="answer2" value="C">
                                    C - navigator.print();
                                 </label>
                             </div>
@@ -74,19 +85,19 @@
                             </label>
                             <div class="radio">
                               <label>
-                                <input type="radio" name="answer3" value="A - while()">
+                                <input type="radio" name="answer3" value="A">
                                 A - while()
                               </label>
                             </div>
                             <div class="radio">
                                <label>
-                                 <input type="radio" name="answer3" value=" B - loop()">
+                                 <input type="radio" name="answer3" value="B">
                                   B - loop()
                                </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer3" value="C - forEach()">
+                                  <input type="radio" name="answer3" value="C">
                                  C - forEach()
                                 </label>
                             </div>
@@ -95,19 +106,19 @@
                             <label for="questio4">4.Which built-in method returns the calling string value converted to upper case?</label>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer4" value="A - toUpperCase()">
+                                  <input type="radio" name="answer4" value="A">
                                   A - toUpperCase()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer4" value="B - toUpper()">
+                                  <input type="radio" name="answer4" value="B">
                                    B - toUpper()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                   <input type="radio" name="answer4" value="C - changeCase(case)">
+                                   <input type="radio" name="answer4" value="C">
                                    C - changeCase(case)
                                 </label>
                             </div>
@@ -117,19 +128,19 @@
                             </label>
                             <div class="radio">
                                 <label>
-                                   <input type="radio" name="answer5" value="A - add()">
+                                   <input type="radio" name="answer5" value="A">
                                    A - add()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer5" value=" B - merge()">
+                                  <input type="radio" name="answer5" value="B">
                                   B - merge()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer5" value="C - concat()">
+                                  <input type="radio" name="answer5" value="C">
                                   C - concat()
                                 </label>
                             </div>
@@ -138,13 +149,13 @@
                             <label for="question6">6.Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</label>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer6" value=" A - slice()">
+                                    <input type="radio" name="answer6" value="A">
                                      A - slice()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer6" value="B - split()">
+                                    <input type="radio" name="answer6" value="B">
                                        B - split()
                                 </label>
                             </div>
@@ -153,19 +164,19 @@
                             <label for="question7">7. Which of the following function of String object returns the primitive value of the specified object.</label>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer7" value="A - toLocaleUpperCase()">
+                                    <input type="radio" name="answer7" value="A">
                                       A - toLocaleUpperCase()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer7" value=" B - toUpperCase()">
+                                    <input type="radio" name="answer7" value="B">
                                     B - toUpperCase()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer7" value=" C - valueOf()">
+                                    <input type="radio" name="answer7" value="C">
                                     C - valueOf()
                                 </label>
                             </div>
@@ -174,19 +185,19 @@
                             <label for="question8">8 . Which of the following function of String object causes a string to be displayed in fixed-pitch font as if it were in a <tt> tag?</label>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer8" value="A - fixed()">
+                                    <input type="radio" name="answer8" value="A">
                                       A - fixed()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer8" value=" B - big()">
+                                    <input type="radio" name="answer8" value="B">
                                     B - big()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer8" value="C - blink()">
+                                    <input type="radio" name="answer8" value="C">
                                     C - blink()
                                 </label>
                             </div>
@@ -195,19 +206,19 @@
                             <label for="question9">9. Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?</label>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer9" value=" A - map()">
+                                    <input type="radio" name="answer9" value="A">
                                     A - map()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer9" value=" B - join()">
+                                    <input type="radio" name="answer9" value="B">
                                     B - join()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                    <input type="radio" name="answer9" value="C - pop()">
+                                    <input type="radio" name="answer9" value="C">
                                     C - pop()
                                 </label>
                             </div>
@@ -216,19 +227,19 @@
                             <label for="question10">10. Which of the following function of Array object sorts the elements of an array?</label>
                             <div class="radio">
                                <label>
-                                  <input type="radio" name="answer10" value="A - toSource()">
+                                  <input type="radio" name="answer10" value="A">
                                  A - toSource()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer10" value=" B - sort()">
+                                  <input type="radio" name="answer10" value="B">
                                   B - sort()
                                 </label>
                             </div>
                             <div class="radio">
                                 <label>
-                                  <input type="radio" name="answer10" value="  C - toString()">
+                                  <input type="radio" name="answer10" value="C">
                                   C - toString()
                                 </label>
                             </div>
@@ -236,10 +247,11 @@
                         <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>
-                <div id="story">
-                   <h1>Show results</h1>
+                <p id="score"> For getting your score click on this paragraph. </p>
+                <div id="result"></div>
                 </div>
     
         </div>
+    </div>
     </body>
 </html>
