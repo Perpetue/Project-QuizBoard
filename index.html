@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Project Quiz Board</title>
+    <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+     <link href="css/styles.css" rel="stylesheet" type="text/css">
+     <script   src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+     <script src="js/scripts.js"></script>
     </head>
     <body>
        <div class="container">
@@ -13,7 +17,7 @@
                 <div>
                   <p>Following quiz provides Multiple Choice Questions (MCQs) related to Javascript Framework. You will have to read all the given answers and click over the correct answer. If you are not sure about the answer then you can check the answer using Show Answer button. </p>
                 </div>
-                <form>
+                <form name="myform" method="post" onsubmit="return mytest()">
                    <div class="form-group">
                       <label for="question1">1. Which of the following is correct about features of JavaScript?</label>
                         <div class="radio">
