@@ -1,16 +1,33 @@
 
-$(document).ready(function() {
-  $("#blanks form").submit(function(event) {
-    var blanks = ["answer1", "answer2", "answer3", "answer4", "answer5", "answer6", "answer7","answer8","answer9","answer10"];
-    var marks=0;
-    for(var i = 0; i < blanks.length; i++){
-      var userInput = $("input:radio[name=" + blanks[i] + "]:checked").val();
-      if(userInput==="right"){
-        marks +=10;
-        alert(marks);
-        }
-    }
-    $("#result").text("your score is " + marks);
+var answers = ["C", "A", "A", "A", "C", "B", "C", "A", "A", "A"],
+tot = answers.length;
+
+function getCheckedValue(radioName) {
+var radios = document.getElementsByName(radioName); // Get radio group by-name
+for (var y = 0; y < radios.length; y++)
+    if (radios[y].checked)
+        return radios[y].value;
+// return the checked value
+
+}
+
+function getScore() {
+var score = 0;
+for (var i = 0; i < tot; i++)
+    if (getCheckedValue("question" + i) === answers[i])
+        score += 1; // increment only
+return score;
+
+}
+//user interface logic(front-end)
+$(document).ready(function () {
+$("form").submit(function (event) {
+    var answers = [];
+    $("#result").text("your score is " + getScore(answers));
+    $("#story").show();
     event.preventDefault();
+});
+$("#score").click(function () {
+    $("#result").toggle();
 });
 });
