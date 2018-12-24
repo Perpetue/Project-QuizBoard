@@ -5,7 +5,7 @@ $(document).ready(function() {
     $('form').submit(function(event) {
         event.preventDefault();
 
-        var answers = ["C", "A", "A", "A", "C", "B", "C", "A", "A", "A"],;
+        var answers = [];
 
         $('.correct').each(function () {
             answers.push($(this).prop('checked'));
@@ -15,6 +15,8 @@ $(document).ready(function() {
 
 
         $('#result').text("Your score is "+ getScore(answers));
+        document.getElementById("quiz").style.display="block";
+        $(".container").fadeOut();
     })
 });
 
