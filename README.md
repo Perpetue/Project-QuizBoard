@@ -8,14 +8,7 @@ This Quiz-Board project is about making the interface logic and business logic w
 ### Setup instructions
 To access on this project, you have to use google chrome and text-editor.
 ### BDD
-| Behavior                                                         | Input     |  Output      |
-| :----------------------------------------------------------------| :--------:| -----------: |
-|   when you click on the correct answer, 2 marks are added but not shown.          | click | nothing |
-|   when you click on the submit button  the score will be shown   | click submit|  your score is40  |
-|
-## USER STORY
-
-As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
+  As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
 ## Link to live site on GitHub Pages
      https://github.com/Perpetue/Project-QuizBoad
 ## Technologies Used
