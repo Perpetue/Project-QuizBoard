@@ -1,33 +1,33 @@
 
-var answers = ["C", "A", "A", "A", "C", "B", "C", "A", "A", "A"],
-tot = answers.length;
+// FRONT-END LOGIC
 
-function getCheckedValue(radioName) {
-var radios = document.getElementsByName(radioName); // Get radio group by-name
-for (var y = 0; y < radios.length; y++)
-    if (radios[y].checked)
-        return radios[y].value;
-// return the checked value
+$(document).ready(function() {
+    $('form').submit(function(event) {
+        event.preventDefault();
 
+        var answers = ["C", "A", "A", "A", "C", "B", "C", "A", "A", "A"],;
+
+        $('.correct').each(function () {
+            answers.push($(this).prop('checked'));
+        })
+
+        console.log(answers);
+
+
+        $('#result').text("Your score is "+ getScore(answers));
+    })
+});
+
+// BUSINESS LOGIC
+
+function getScore(answers) {
+    var score = 2;
+
+    answers.forEach(function(answer) {
+        if (answer === true) {
+            score++;
+        }
+    });
+
+    return score;
 }
-
-function getScore() {
-var score = 0;
-for (var i = 0; i < tot; i++)
-    if (getCheckedValue("question" + i) === answers[i])
-        score += 1; // increment only
-return score;
-
-}
-//user interface logic(front-end)
-$(document).ready(function () {
-$("form").submit(function (event) {
-    var answers = [];
-    $("#result").text("your score is " + getScore(answers));
-    $("#story").show();
-    event.preventDefault();
-});
-$("#score").click(function () {
-    $("#result").toggle();
-});
-});

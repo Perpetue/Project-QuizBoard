@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,35 +22,33 @@
             </nav> 
         </div>
         <div id="model">
-       <div class="container" >
-            <div class="jumbotron">
-                <h1> JavaScript QUIZ BOARD</h1>
-                <p>There are some instructions of doing this Quiz:</p>
+            <div class="container" >
+                <div class="jumbotron">
+                   <h1> JavaScript QUIZ BOARD</h1>
+                   <p>There are some instructions of doing this Quiz:</p>
                     <ul>
-                      <li>Each question has 1 point and the quiz will be worked on 10 points</li>
+                      <li>Each question has 2 point and the quiz will be worked on 20 points</li>
                       <li>Select one answer for each question.</li>
                       <li>Answer all questions.</li>
                       <li>After answering all qustions click on submit button.</li>
                       <li>To see your score click on the paragraph below</li>
                       <li>To hide also your score click also on that paragraph below</li>
                     </ul>
-            </div>
-            <div id="blanks">
-                <form  >
-                   <div id="quiz">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                   <label for="question0">1. Which of the following is correct about features of JavaScript?</label>
-                                   <div class="radio">
-                                   <label>
-                              <input type="radio" name="answer0" value="A">
-                           A - JavaScript is a lightweight, interpreted programming language.
-                           </label>
+                </div>
+                <div id="row">
+                   <div class="col-md-6">
+                   <form>
+                        <div class="form-group">
+                            <label for="question0">1. Which of the following is correct about features of JavaScript?</label>
+                               <div class="radio">
+                                    <label>
+                                        <input type="radio" name="answer0" value="A">
+                                          A - JavaScript is a lightweight, interpreted programming language.
+                                    </label>
                                 </div>
                                 <div class="radio">
-                           <label>
-                              <input type="radio" name="answer0" value="B">
+                                        <label>
+                                   <input type="radio" name="answer0" value="B">
                              B - JavaScript is designed for creating network-centric applications.
                             </label>
                                 </div>
@@ -146,7 +144,6 @@
                                 </label>
                             </div>
                             </div>
-                            <div class="col-md-6">
                                     <div class="form-group">
                             <label for="question5">6.Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</label>
                             <div class="radio">
@@ -245,10 +242,11 @@
                             </div>
                             </div>
                             </div>
-                        </div>
-                   </div>
-                        <button id="submit">Submit Quiz</button>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Submit">
                     </form>
+                   </div>
+                </div>
                 </div>
                 <div id="result"></div>
                 <p id="score"> For getting back your quiz form click on here. </p>
