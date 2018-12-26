@@ -1,5 +1,5 @@
 body {
-    background-image:url("https://images.unsplash.com/photo-1500769611524-c0045efac2cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-color:navajowhite;
     font-family: verdana;
     background-size:cover;
     }
@@ -13,7 +13,7 @@ nav>ul{
     padding:0px;
     text-transform:uppercase;
     text-decoration:none;
-    color:white;
+    color:black;
     margin-top:5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -26,10 +26,28 @@ nav>ul{
     padding: 25px;
     font-size: 18px;
   }
-p{
+  .header1{
+    padding-left:25%;
+    background-color: 	#BDB76B;
+}
+.paragraph{
   font-size: 18px;
-  fon
+  color: black;
+  text-align: center
 }
 .optioncontainer{
-  padding left: 10%;
+margin-left:20%;
+}
+.footer{
+  text-align: center;
+}
+.social{
+  text-align:right;
+  background-color:	#87CEFA;
+  margin-top: 60px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.social footer{
+ text-align: center; 
 }
