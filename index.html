@@ -4,242 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Project Quiz Board</title>
-    <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-        <!--navigation-->
-    <div class ="navigation">
-        <nav>
-            <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about"a>About </a></li>
-            <li><a href="#instruction"> Instruction</a></li>
-            </ul>
-        </nav> 
+    <div class ="well">
+    <div class="panel panel-default">
+    <div class ="penel-heading">
+        <h2> If you want to get question for javascripts click on login to Fill the Form</h2>
     </div>
-        <!--instruction-->
-    <div id="model">
-        <div class="jumbotron">
-            <div class="header1">
-                <h1 > JavaScript QUIZ BOARD</h1>
-                <p class="panel-title" >There are some instructions of doing this Quiz:</p>
-                <ul>
-                    <li>Each question has 2 point and the quiz will be worked on 20 points</li>
-                    <li>Select one answer for each question.</li>
-                    <li>Answer all questions.</li>
-                    <li>After answering all qustions click on submit button.</li>
-                    <li>To see your score click on the paragraph below</li>
-                    <li>To hide also your score click also on that paragraph below</li>
-                </ul>
-                <p>All questions are obligation to work</p>
-                <p>Good luck !!!!!!!!!!!!!!!!!!</p>
+    </div>
+    </div>
+    <img src="./image/images.jpeg" alt="image" class="image10" width="50%">
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+    <div id="id01" class="modal">
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="img_avatar4.png" alt="Avatar" class="avatar">
             </div>
-        </div>
-                <!--Question-->
-        <div class="container" >
-            <form>
-                <div id="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question0">1. Which of the following is correct about features of JavaScript?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer0" value="false" required>A - JavaScript is a lightweight, interpreted programming language.</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer0" value="false" required>B - JavaScript is designed for creating network-centric applications.</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer0" value="true" class="correct"> C - All of the above</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                                <div class="well">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <label for="answer1">2. Which of the following is the correct syntax to print a page using JavaScript?</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="true" class="correct">A - window.print();</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="false"> B - browser.print();</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer1" value="false">C - navigator.print();</label>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="form-group">
-                                <div class="well">
-                                    <div class="panel panel-default">
-                                        <div class="panel-heading">
-                                            <label for="answer2">3. Which built-in method calls a function for each element in the array?</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="true" class="correct">A - while()</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="false">B - loop()</label>
-                                        </div>
-                                        <div class="radio">
-                                            <label><input type="radio" name="answer2" value="false">C - forEach()</label>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="questio3">4.Which built-in method returns the calling string value converted to upper case?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer3" value="true" class="correct">A - toUpperCase()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label> <input type="radio" name="answer3" value="false">B - toUpper()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer3" value="false">C - changeCase(case)</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question4">5 .Which of the following function of String object combines the text of two strings and returns a new string?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer4" value="false">A - add()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer4" value="false">B - merge()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label>
-                                        <input type="radio" name="answer4" value="true" class="correct">C - concat()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question5">6.Which of the following function of String object splits a String object into an array of strings by separating the string into substrings?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer5" value="false">A - slice()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer5" value="true" class="correct"> B - split()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question6">7. Which of the following function of String object returns the primitive value of the specified object.</label>
-                                    </div>
-                                    <div class="radio"> 
-                                        <label><input type="radio" name="answer6" value="false" required>A - toLocaleUpperCase()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer6" value="false" required>B - toUpperCase()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer6" value="true" class="correct" required>C - valueOf()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default  optioncontaner">
-                                    <div class="panel-heading">
-                                        <label for="question7">8. Which of the following function of String object causes a string to be displayed in fixed-pitch font as if it were in a &lt;tt&gt; tag?</label>
-                                    </div> 
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer7" value="true">A - fixed()</label>
-                                    </div> 
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer7" value="false">B - big()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer7" value="false">C - blink()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question8">9. Which of the following function of Array object creates a new array with the results of calling a provided function on every element in this array?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer8" value="true" class="correct">A - map()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer8" value="false">B - join()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer8" value="false">C - pop()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="well">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <label for="question9">10. Which of the following function of Array object sorts the elements of an array?</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer9" value="true" class="correct"> A - toSource()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer9" value="false">B - sort()</label>
-                                    </div>
-                                    <div class="radio">
-                                        <label><input type="radio" name="answer9" value="false">C - toString()</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="submit" class="btn btn-primary" value="Submit">
-                </div>
-            </form>
-        </div>
+        
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                    
+                <button type="submit"  style="width:auto;"><a href ="index2.html">Login</a></button>
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            </div>
+        </form>
     </div>
-    <div id="quiz"></div>
-    <div class=footer> <h1 id="result"></h1></div>
-    <div class="social">
-                <a href="muperpety@gmail.com" class="fa fa-gmail">Gmail</a>
-                <a href="https://www.facebook.com/mhawenimana.perpetue" class="fa fa-facebook"></a>
-                <a href="``" class="fa fa-github"></a>
-                <a href ="https://moringaschool.slack.com/messages/" class ="fa fa-slack"></a> 
-                    <!--lisence i am using-->
-                <footer>Copyright@2018 by Perpetue MUHAWENIMANA. All rights reserved.</footer>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
 </body>
 </html>
