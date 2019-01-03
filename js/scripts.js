@@ -27,7 +27,7 @@ function getScore(answers) {
 
     answers.forEach(function(answer) {
         if (answer === true) {
-            score++;
+            score=score+2;
         }
     });
 
