@@ -8,7 +8,7 @@ To access on this project, you have to use google chrome and text-editor.
 ### BDD
    The first User obligate to fill the  form then submit to get question . As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
 ## Link to live site on GitHub Pages
- - `https://github.com/Perpetue/Project-QuizBoad`
+  https://github.com/Perpetue/Project-QuizBoad
 ## Technologies Used
    About the languages and tools I used to create this project. Assume that I know you probably used  languages HTML ,CSS, Javascripts and Markdown i used the bootstrap ,jquery, visual studio code and  linux or Ubuntu for terminal.
    ## Contact information.
