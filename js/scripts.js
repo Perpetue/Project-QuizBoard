@@ -14,7 +14,7 @@ $(document).ready(function() {
         console.log(answers);
 
 
-        $('#result').text("Your score is "+ getScore(answers));
+        $('#result').text("Your score is "+ getScore(answers) +"/20");
         document.getElementById("quiz").style.display="block";
         $(".container").fadeOut();
     })
