@@ -1,14 +1,12 @@
 # PROJECT QUIZ BOAD
 ##  My project created as project Quiz Board , 19 DEC 2018
 #### By Perpetue MUHAWENIMANA
-
 ### Description
-
 This Quiz-Board project is about making the interface logic and business logic where the interface logic is a form made by different questions with relative answers in the radio buttons form. The user has to choose one answer while clicking on the corresponding button. At the end there is a submit button where while you submit the score will be shown.
 ### Setup instructions
 To access on this project, you have to use google chrome and text-editor.
 ### BDD
-  As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
+   The first User obligate to fill the  form then submit to get question . As a User I want to answer questions in this Quiz-Bord, When I click on the correct answer, 2 marks are added but when I click on the wrong answer, nothing will  be added on marks. Finishing answering I submit while clicking on  the submit button, and the total marks will be shown as the score.
 ## Link to live site on GitHub Pages
      https://github.com/Perpetue/Project-QuizBoad
 ## Technologies Used
